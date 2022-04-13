@@ -43,7 +43,7 @@ def decision(kind, name):
 
 if __name__ == '__main__':
     choices = {'entity', 'service', 'controller', 'repository'}
-    parser = argparse.ArgumentParser(description='Send and receive over TCP')
+    parser = argparse.ArgumentParser(description='create some .go files')
     parser.add_argument('name', help='name of the file')
     parser.add_argument('-t', metavar='TYPE', choices=choices, help='which file to create')
     parser.add_argument('-a', metavar='ALL', type=bool, default=False, help='create all file type')
